@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio</title>
+<link rel="stylesheet" href="pavan.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <script src="pavan.js"></script>
+<nav>
+    <h1><span class="highlight1">Suragani Pavan</span></h1>
+  <ul>
+    <li><a href="" id="homeLink">Home</a></li>
+    <li><a href="#" id="aboutLink" onclick="showAbout()">About</a></li>
+    <li><a href="#" onclick="toggleProjects()">Projects</a></li>
+    <li><a href="#" id="contactLink" onclick="showContact()">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about" style="display:none; background-color: #8e9f22; padding: 20px;" >
+    <h2>About Me</h2>
+    <p>I am Suragani Pavan, a passionate and dedicated student pursuing Agri Engineering. I have a strong interest in Web Development.</p>
+    <h3>Skills</h3>
+    <table>
+        <tr>
+            <th style="color: black;">Skill Category</th>
+            <th style="color: black;">Description</th>
+        </tr>
+        <tr>
+            <td>Programming Languages</td>
+            <td>Java, Mysql, MongoDB, JavaScript, Html, css, BootStrap, ChatGpt</td>
+        </tr>
+        <tr>
+            <td>Soft Skills</td>
+            <td>Communication, TeamWork, LeaderShip</td>
+        </tr>
+        <tr>
+            <td>Communication</td>
+            <td>Telugu , Tamil , English</td>
+        </tr>
+    </table>
+    
+</section>
+
+<section id="projects" style="display:none;">
+    <h2>Projects</h2>
+    <div class="project-images">
+        <div class="project" onmouseover="showInfo('studentManagement')" onmouseout="hideInfo()">
+            <img src="images/s1.png" alt="Project 1">
+            <div class="overlay">Student Management System</div>
+        </div>
+        <div class="project" onmouseover="showInfo('formValidation')" onmouseout="hideInfo()">
+            <img src="images/f1.jpg" alt="Project 2">
+            <div class="overlay">Form Validation</div>
+        </div>
+        <div class="project" onmouseover="showInfo('eCommerce')" onmouseout="hideInfo()">
+            <img src="images/eCommerce.jpeg" alt="Project 3">
+            <div class="overlay">E-commerce Web site</div>
+        </div>
+    </div>
+</section>
+<div id="info" class="hidden">
+    <h3 id="infoTitle"></h3>
+    <p id="infoDescription"></p>
+</div>  
+
+
+<section id="contact" style="display:none;">
+    <h2 style="margin-left: 500px;">Contact Information:</h2>
+    <div class="contact-info">
+        <div class="info-item">
+            <h3>Email:</h3>
+            <p>Suraganipavangoud13@email.com</p>
+        </div>
+        <div class="info-item">
+            <h3>Phone:</h3>
+            <p>91+ 6309074626</p>
+        </div>
+        <div class="info-item">
+            <h3>Address:</h3>
+            <p>Krishna nagar(v) Munagala(M) Suryapet(D) Telangana(S) India</p>
+        </div>
+        <div class="info-item">
+            <h3>Social Media:</h3>
+            <ul class="social-links">
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<div class="content">
+    <div class="text">
+        <h1>Hello it's Me</h1>
+        <h2>Suragani Pavan</h2>
+        <p>A passionate Agri Engineering student with a keen interest in <span class="live-text">Web Development</span>.<br><br> Explore my projects and feel free to reach out to me!</p>
+        <h2>Welcome to my Portfolio!</h2>
+    </div>
+    <div class="image-container">
+        <img src="images/protfilo.jpg" alt="Profile Picture" class="profile-image">
+    </div>
+</div>
+
+<h1 style="margin-left: 600px; margin-top: 200px;">About Me: </h1>
+<div class="content1">
+    <div class="image-container1">
+        <img src="images/protfilo.jpg" alt="Profile Picture" class="profile-image1">
+    </div>
+    <div class="text1">
+        <p style="color: white; line-height: 30px;">
+            As a seasoned web developer, I bring years of experience and a genuine passion for crafting exceptional digital experiences. Specializing in front-end development, I excel in translating creative concepts into responsive and intuitive websites. My skill set includes proficiency in HTML, CSS, and JavaScript, as well as expertise in popular libraries and frameworks like React, Vue.js, and Angular.
+
+            I thrive in collaborative environments where I can contribute innovative ideas and work closely with designers and stakeholders to bring projects to life. From building interactive user interfaces to optimizing website performance for speed and accessibility, I am committed to delivering high-quality solutions that exceed expectations.
+
+            <span id="additional-lines" style="display: none;">
+
+            Beyond technical expertise, I am deeply fascinated by the ever-evolving landscape of web development. I actively seek out opportunities to expand my knowledge and stay abreast of emerging technologies and best practices. Whether it's experimenting with new tools or diving into advanced topics like progressive web apps and responsive design, I am always eager to learn and grow as a developer.
+
+            Driven by a genuine passion for innovation and a relentless pursuit of excellence, I am excited to leverage my skills and expertise to tackle new challenges and contribute to the success of impactful projects in the dynamic world of web development.
+        </span>
+        <br>
+        <br>
+        <button class="read-more-btn" onclick="toggleAdditionalLines()">Read More</button>
+        <button  class="read-more-btn"onclick="toggleEducation()" style="margin-left: 50px;">Education</button>
+        <p><a href="pavan_resume.pdf" target="_blank" style="color: white; text-decoration: none;"><button class="read-more-btn">Download Resume</button></a></p>
+        </p>
+    </div>
+</div>
+
+<section id="education" style="margin-left: 600px;">
+    <h2>Education</h2>
+    <table>
+        <tr>
+            <th>Educational Level</th>
+            <th>Institution</th>
+            <th>Location</th>
+            <th>Percentage/CGPA</th>
+            <th>Year of Passing</th>
+        </tr>
+        <tr>
+            <td>High School</td>
+            <td>Teja Talent School</td>
+            <td>Kodad</td>
+            <td>98%</td>
+            <td>2018</td>
+        </tr>
+        <tr>
+            <td>Diploma</td>
+            <td>PJTS Agriculture University</td>
+            <td>Hyderabad</td>
+            <td>78%</td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>B.E</td>
+            <td>Sri shakthi institute of Engineering and technology</td>
+            <td>coimbatore</td>
+            <td>90%</td>
+            <td>2024</td>
+        </tr>
+    </table>
+</section>
+
+  
+<div class="name1">
+<h1 class="name" style="margin-left: 700px;"> My Skills </h1>
+  
+<div class="image-container2" style="margin-top: 50px;">
+    <div class="image-wrapper">
+        <img src="images/j1.jpg" alt="Image 1">
+        <p>JavaScript</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/b1.jpg" alt="Image 2">
+        <p>Bootstrap</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/my2.jpg" alt="Image 3">
+        <p>My sql</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/c1.jpg" alt="Image 4">
+        <p>CSS</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/h1.jpg" alt="Image 5">
+        <p>Html</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/m2.jpg" alt="Image 6">
+        <p>MongoDB</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/java.png" alt="Image 1">
+        <p>Java</p>
+    </div>
+</div>
+
+
+<h2 style="margin-left: 200px; margin-top: 100px;">Tech Skills:</h2>
+
+<div class="main" style="color: white;">
+    
+    <div class="pie-container">
+        <div class="pie" style="--p:90">Java</div>
+        <div class="pie" style="--p:90">MySQL</div>
+        <div class="pie" style="--p:65">JavaScript</div>
+        <div class="pie" style="--p:80">CSS</div>
+        <div class="pie" style="--p:80">Bootstrap</div>
+        <div class="pie" style="--p:90">HTML</div>
+        <div class="pie" style="--p:90">MongoDB</div>
+
+    </div>
+</div>
+</div>
+
+<h1 style="margin-left: 250px; margin-top: 50px; margin-bottom: 100px;">Communication Languages:</h1>
+<div class="simple-bar-chart">
+  
+  <div class="item" style="--clr: #5EB344; --val: 100">
+    <div class="label">English</div>
+    <div class="value">100%</div>
+  </div>
+  
+  
+  <div class="item" style="--clr: #F8821A; --val: 100">
+    <div class="label"> Telugu</div>
+    <div class="value">100%</div>
+  </div>
+  <div class="item" style="--clr: #FCB72A; --val: 50">
+    <div class="label">Tamil</div>
+    <div class="value">50%</div>
+  </div>
+  <div class="item" style="--clr: #1af8c4; --val: 40">
+    <div class="label"> Hindi</div>
+    <div class="value">40%</div>
+  </div>
+  </div>
+</div>
+
+<div class="internships">
+    <h1 style="text-align: center; margin-top: 50px;">Internships</h1>
+    <div class="internship-images">
+        <div class="internship webDevelopmentInternship" onmouseover="displayInternshipDetails('webDevelopmentInternship')" onmouseout="hideInternshipDetails()">
+            <h3 style="margin-top: 100px; margin-bottom: 50px;">Web Development Internship Program</h3>
+            <img src="images/w1.webp" alt="Web Development Internship">
+            <p style="display: none;">
+                <strong>Duration:</strong> 3 months (May - July 2024)<br>
+                <strong>Objectives:</strong><br>
+                - Provide hands-on experience in web development technologies.<br>
+                - Enable interns to work on real-world projects.<br>
+            </p>
+            
+        </div>
+        <div class="internship qualityManagementInternship" onmouseover="displayInternshipDetails('qualityManagementInternship')" onmouseout="hideInternshipDetails()">
+            <h3 style="margin-top: 100px; margin-bottom: 50px;">Quality Management in Seed Company</h3>
+            <img src="images/q1.png" alt="Quality Management Internship">
+            <p style="display: none;">
+                <strong>Quality Standards:</strong><br>
+                - Adherence to national and international seed quality standards.<br>
+                - Compliance with regulatory requirements for seed production and distribution.<br>
+                <strong>Quality Management System:</strong><br>
+                - Implementation of ISO 9001:2015 standards for quality management.<br>
+                - Regular quality audits conducted by internal and external auditors.<br>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<section id="projects2">
+    <h1 style="text-align: center; margin-top: 50px;">Projects:</h1>
+    <div class="project-grid">
+        <div class="project2" onmouseover="showProjectInfo('s1')" onmouseout="hideProjectInfo('s1')" id="s1">
+            <img src="images/s1.png" alt="Project 1">
+            <div class="overlay1"></div>
+        </div>
+        <div class="project2" onmouseover="showProjectInfo('f1')" onmouseout="hideProjectInfo('f1')" id="f1">
+            <img src="images/f1.jpg" alt="Project 2">
+            <div class="overlay1"></div>
+        </div>
+        <div class="project2" onmouseover="showProjectInfo('eCommerce')" onmouseout="hideProjectInfo('eCommerce')" id="eCommerce">
+            <img src="images/eCommerce.jpeg" alt="Project 3">
+            <div class="overlay1"></div>
+        </div>
+        <div class="project2" onmouseover="showProjectInfo('t1')" onmouseout="hideProjectInfo('t1')" id="t1">
+            <img src="images/t1.jpg" alt="Project 4">
+            <div class="overlay1"></div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+
+        <div class="footer-content">
+            <h3>Feel Free to Contact Me</h3>
+            <form class="send-message-form" action="send_message.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Suragani Pavan. All rights reserved.
+        </div>
+   
+  <div class="footer-content">
+    <h3>Follow Me</h3>
+    <ul class="social-links">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2024 Suragani Pavan. All rights reserved.
+  </div>
+
+</footer>
+
+</body>
+</html>
